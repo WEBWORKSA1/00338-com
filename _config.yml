@@ -1,0 +1,3 @@
+title: 00338 Number Lab
+exclude: [build, docs, README.md, node_modules, dist, jekyll, "*.py"]
+keep_files: []
