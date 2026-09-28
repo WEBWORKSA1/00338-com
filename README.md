@@ -8,21 +8,25 @@ Chinese lucky-number meanings, a Mandarin/Cantonese number decoder, 10 free tool
 ## How it works
 
 ```
-src/assets/   CSS, JS (engine, tools, app runtime, config), images
-build/        build.js (generator) + data.js + articles.js
-dist/         generated site (not committed; built by GitHub Actions)
+main branch      source: src/assets (CSS, JS engine/tools/app/config), build/ (generator + data + articles), docs/
+gh-pages branch  the LIVE site, served by GitHub Pages' built-in Jekyll
+                 _layouts/ (default, number, zodiac), _includes/ (aside, lead, nlist),
+                 _data/ (digits, combos, signs), pages as HTML + front matter
 ```
 
-`node build/build.js` → builds `dist/`. No dependencies (Node 18+).
-
-Every push to `main` runs **.github/workflows/deploy.yml**, which builds the site and publishes it to the `gh-pages` branch (GitHub Pages, free plan).
+- Live: https://webworksa1.github.io/00338-com/ (and https://00338.com once DNS points to GitHub Pages).
+- `node build/build.js` builds a fully static preview in `dist/` (Node 18+, no dependencies).
+- The live site is the `gh-pages` branch. GitHub Pages builds it automatically with Jekyll on every push — no Actions workflow needed. Number pages (`numbers/*.html`) and zodiac pages (`zodiac/*.html`) are front matter only; the layouts render them.
+- To edit site-wide HTML (header, footer, top contact bar, ads, consent banner) edit `gh-pages:_layouts/default.html`. Shared JS/CSS live in `gh-pages:src/assets/`.
+- Optional: a GitHub Actions workflow could rebuild from `main` automatically, but the integration used to create this repo had no `workflow` permission, so it was not added.
 
 ## One-time setup
 
-1. **Settings → Pages →** Source: *Deploy from a branch* → `gh-pages` / `(root)` (the workflow also tries to enable this automatically).
-2. **Custom domain:** add `00338.com` in Settings → Pages; at your registrar set A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` and `www` CNAME → `webworksa1.github.io`. Enable **Enforce HTTPS**.
-3. **Forms:** submit any form once; FormSubmit sends an activation link to the owner inbox — click it. Optionally paste the alias it gives you into `src/assets/js/config.js → formAlias`.
-4. **AdSense / GA4 / YouTube / payment links:** edit `src/assets/js/config.js`. Update `ads.txt` template in `build/build.js` with your publisher ID.
+1. **Settings → Pages** is already enabled: *Deploy from a branch* → `gh-pages` / `(root)`.
+2. **Custom domain:** in Settings → Pages add `00338.com` (this creates a `CNAME` file on `gh-pages`). At your registrar set A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` and a `www` CNAME → `webworksa1.github.io`. When the certificate is issued, turn on **Enforce HTTPS**. All links are relative, so the site works on both the project URL and the custom domain.
+3. **Forms:** submit any form once. FormSubmit sends an activation link to the owner inbox; click it. After that, every lead, contact and donation pledge is delivered to the inbox.
+4. **AdSense / GA4 / YouTube / payment links:** edit `gh-pages:src/assets/js/config.js` (and `main:src/assets/js/config.js` to keep them in sync). Put your AdSense publisher ID in `gh-pages:ads.txt`.
+5. **Social preview image:** upload a 1200×630 `og.png` to `gh-pages:src/assets/img/` (`build/make_images.py` generates one) and add an `og:image` tag to `_layouts/default.html`.
 
 ## Privacy of the contact inbox
 
