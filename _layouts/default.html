@@ -4,21 +4,22 @@
 <meta charset="utf-8">
 {% if page.is404 %}<script>document.write('<base href="' + (location.pathname.indexOf('/00338-com/') === 0 ? '/00338-com/' : '/') + '">')</script>{% endif %}
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{{ page.title }}{% unless page.home %} | 00338{% endunless %}</title>
-<meta name="description" content="{{ page.description | escape }}">
+{% if page.n %}{% capture T %}{{ page.n }} Meaning in Chinese — Lucky or Unlucky? ({{ page.sc[0][0] }}/100){% endcapture %}{% capture D %}What does {{ page.n }} mean in Chinese culture? {{ page.sum }} Mandarin vs Cantonese readings, combos and how to use it.{% endcapture %}{% else %}{% assign T = page.title %}{% assign D = page.description %}{% endif %}
+<title>{{ T }}{% unless page.home %} | 00338{% endunless %}</title>
+<meta name="description" content="{{ D | escape }}">
 <link rel="canonical" href="https://00338.com/{{ page.canon }}">
 <meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
 <meta name="theme-color" content="#C8102E">
 <meta property="og:type" content="{{ page.ogtype | default: 'website' }}">
 <meta property="og:site_name" content="00338 Number Lab">
-<meta property="og:title" content="{{ page.title | escape }}">
-<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:title" content="{{ T | escape }}">
+<meta property="og:description" content="{{ D | escape }}">
 <meta property="og:url" content="https://00338.com/{{ page.canon }}">
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="{{ page.base }}src/assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Noto+Serif+SC:wght@600;700&display=swap">
-<link rel="stylesheet" href="{{ page.base }}src/assets/css/style.css?v=71938928">
+<link rel="stylesheet" href="{{ page.base }}src/assets/css/style.css?v=20260928">
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body>
@@ -55,7 +56,7 @@
 </div></footer>
 <div class="consent" role="dialog" aria-label="Cookie consent"><b>Cookies & ads</b><p class="small" style="margin:.4em 0 0">We use cookies for analytics and Google AdSense ads that keep this site free. Choose "Accept all" for personalised ads, or "Essential only" for non-personalised ads. <a href="{{ page.base }}privacy.html">Privacy policy</a>.</p><div class="btns"><button class="btn btn-primary" data-consent="all" type="button">Accept all</button><button class="btn btn-ghost" data-consent="essential" type="button">Essential only</button></div></div>
 <a class="btn btn-primary sticky-cta" href="{{ page.base }}get-a-lucky-number.html">🧧 Get a lucky number</a>
-<script src="{{ page.base }}src/assets/js/config.js?v=71938928"></script>
-{% if page.tools %}<script src="{{ page.base }}src/assets/js/site-data.js?v=71938928"></script><script src="{{ page.base }}src/assets/js/engine.js?v=71938928"></script><script src="{{ page.base }}src/assets/js/tools.js?v=71938928" defer></script>{% endif %}
-<script src="{{ page.base }}src/assets/js/app.js?v=71938928" defer></script>
+<script src="{{ page.base }}src/assets/js/config.js?v=20260928"></script>
+{% if page.tools %}<script src="{{ page.base }}src/assets/js/site-data.js?v=20260928"></script><script src="{{ page.base }}src/assets/js/engine.js?v=20260928"></script><script src="{{ page.base }}src/assets/js/tools.js?v=20260928" defer></script>{% endif %}
+<script src="{{ page.base }}src/assets/js/app.js?v=20260928" defer></script>
 </body></html>
