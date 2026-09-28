@@ -1,0 +1,136 @@
+// Structured content for 00338 Number Lab
+module.exports.ZODIAC = [
+  { animal: 'Rat', glyph: '鼠', py: 'shǔ', lucky: [2, 3], unlucky: [5, 9], colors: ['Blue', 'Gold', 'Green'], best: ['Dragon', 'Monkey', 'Ox'],
+    traits: 'Quick-witted, resourceful and thrifty. Rats spot opportunity early and are natural networkers, though they can over-analyse and hoard.',
+    career: 'Strong in trading, research, sales, writing and entrepreneurship — anywhere speed and information pay.',
+    number: 'Rats favour 2 and 3; a phone ending 23 or 32 is a classic Rat pick. Avoid endings in 5 and 9.' },
+  { animal: 'Ox', glyph: '牛', py: 'niú', lucky: [1, 4], unlucky: [5, 6], colors: ['White', 'Yellow', 'Green'], best: ['Rat', 'Snake', 'Rooster'],
+    traits: 'Dependable, patient and methodical. The Ox builds wealth slowly and surely, but can be stubborn and slow to adapt.',
+    career: 'Excels in engineering, agriculture, finance, manufacturing and long-horizon projects.',
+    number: 'Popular almanac lists give the Ox 1 and 4 — one of the few signs where 4 is considered personally favourable. Many Ox natives still avoid 4 in business numbers because customers read it as "death".' },
+  { animal: 'Tiger', glyph: '虎', py: 'hǔ', lucky: [1, 3, 4], unlucky: [6, 7, 8], colors: ['Blue', 'Grey', 'Orange'], best: ['Horse', 'Dog', 'Pig'],
+    traits: 'Brave, competitive and charismatic. Tigers lead from the front and love a challenge, but can be impulsive.',
+    career: 'Natural fit for leadership, military, sport, start-ups and advocacy.',
+    number: 'Some almanacs list 8 as less favourable for Tigers — an interesting exception to the universal love of 8.' },
+  { animal: 'Rabbit', glyph: '兔', py: 'tù', lucky: [3, 4, 6], unlucky: [1, 7, 8], colors: ['Red', 'Pink', 'Purple', 'Blue'], best: ['Goat', 'Pig', 'Dog'],
+    traits: 'Gentle, elegant and diplomatic. Rabbits read people well and avoid conflict, sometimes to a fault.',
+    career: 'Design, diplomacy, healthcare, education, hospitality and the arts.',
+    number: '36 and 63 endings — "growth that flows" — suit the Rabbit and avoid the 4 that outsiders dislike.' },
+  { animal: 'Dragon', glyph: '龙', py: 'lóng', lucky: [1, 6, 7], unlucky: [3, 8], colors: ['Gold', 'Silver', 'Grey'], best: ['Rat', 'Monkey', 'Rooster'],
+    traits: 'Ambitious, magnetic and confident — the most celebrated sign. Birth rates in Chinese communities often rise in Dragon years.',
+    career: 'Executives, founders, performers, politicians and inventors.',
+    number: 'Dragons pair well with 1 and 6: "first and smooth". 16 and 61 endings are popular.' },
+  { animal: 'Snake', glyph: '蛇', py: 'shé', lucky: [2, 8, 9], unlucky: [1, 6, 7], colors: ['Black', 'Red', 'Yellow'], best: ['Ox', 'Rooster', 'Monkey'],
+    traits: 'Wise, intuitive and private. Snakes plan quietly and strike at the right time; they can be possessive.',
+    career: 'Strategy, investing, law, psychology, research and luxury goods.',
+    number: 'Snake years reward 28 and 89 — "easy prosperity" and "prosperity that lasts".' },
+  { animal: 'Horse', glyph: '马', py: 'mǎ', lucky: [2, 3, 7], unlucky: [1, 5, 6], colors: ['Yellow', 'Green'], best: ['Tiger', 'Goat', 'Dog'],
+    traits: 'Energetic, free-spirited and sociable. Horses thrive on movement and new horizons; routine bores them.',
+    career: 'Travel, sales, media, sport, logistics and anything client-facing.',
+    number: '2026 is a Fire Horse year (丙午). Horse-friendly 27 and 72 endings see extra demand this year.' },
+  { animal: 'Goat', glyph: '羊', py: 'yáng', lucky: [3, 4, 9], unlucky: [6, 7, 8], colors: ['Brown', 'Red', 'Purple'], best: ['Rabbit', 'Horse', 'Pig'],
+    traits: 'Creative, kind and calm. Goats (also called Sheep or Ram) are empathetic team players who dislike pressure.',
+    career: 'Arts, design, gardening, counselling, fashion and non-profits.',
+    number: '39 and 93 — "growth that lasts" — are Goat-friendly. Some almanacs even discourage 8 for Goats in personal PINs.' },
+  { animal: 'Monkey', glyph: '猴', py: 'hóu', lucky: [4, 9], unlucky: [2, 7], colors: ['White', 'Blue', 'Gold'], best: ['Rat', 'Dragon', 'Snake'],
+    traits: 'Clever, playful and inventive. Monkeys solve problems fast and love novelty, but can get restless.',
+    career: 'Technology, engineering, trading, entertainment and marketing.',
+    number: 'Monkey is one of the few signs whose almanac lucky list includes 4 — proof that symbolism is contextual.' },
+  { animal: 'Rooster', glyph: '鸡', py: 'jī', lucky: [5, 7, 8], unlucky: [1, 3, 9], colors: ['Gold', 'Brown', 'Yellow'], best: ['Ox', 'Snake', 'Dragon'],
+    traits: 'Observant, hard-working and honest. Roosters are organised perfectionists who speak their mind.',
+    career: 'Accounting, journalism, hospitality, retail and operations.',
+    number: '78 and 578 endings fit the Rooster: "rise to prosperity".' },
+  { animal: 'Dog', glyph: '狗', py: 'gǒu', lucky: [3, 4, 9], unlucky: [1, 6, 7], colors: ['Red', 'Green', 'Purple'], best: ['Tiger', 'Horse', 'Rabbit'],
+    traits: 'Loyal, honest and protective. Dogs value fairness and are the friend everyone trusts.',
+    career: 'Law, nursing, social work, security, teaching and public service.',
+    number: '39 and 93 endings — "growth that lasts" — are Dog favourites.' },
+  { animal: 'Pig', glyph: '猪', py: 'zhū', lucky: [2, 5, 8], unlucky: [1, 7], colors: ['Yellow', 'Grey', 'Brown', 'Gold'], best: ['Tiger', 'Rabbit', 'Goat'],
+    traits: 'Generous, sincere and easy-going. Pigs enjoy life and attract abundance; they can be too trusting.',
+    career: 'Hospitality, food, entertainment, charity and finance.',
+    number: 'Pig + 8 is a doubly auspicious match; 28 and 58 (Mandarin) endings are common choices.' }
+];
+
+module.exports.LIFE_PATH = {
+  1: 'The Leader — independent, pioneering, driven. Best when building something of your own.',
+  2: 'The Diplomat — cooperative, sensitive, a natural partner and mediator.',
+  3: 'The Communicator — creative, expressive, social; thrives on audience and ideas.',
+  4: 'The Builder — practical, disciplined, systems-minded; turns plans into structures.',
+  5: 'The Adventurer — curious, adaptable, freedom-loving; learns by doing.',
+  6: 'The Nurturer — responsible, caring, community-focused; a protector.',
+  7: 'The Seeker — analytical, introspective, drawn to research and mastery.',
+  8: 'The Powerhouse — ambitious, strategic, money-savvy (and in Chinese culture, doubly lucky).',
+  9: 'The Humanitarian — compassionate, idealistic, big-picture; finishes cycles.',
+  11: 'Master 11 — intuitive visionary; heightened sensitivity and inspiration.',
+  22: 'Master 22 — the master builder; big dreams made practical.',
+  33: 'Master 33 — the master teacher; service, healing and uplift.'
+};
+
+// Extra cultural notes for notable numbers (merged onto generated pages)
+module.exports.NOTES = {
+  '0': 'Zero is rarely lucky or unlucky on its own. It is used to "round out" prices (e.g. 1,000,000) and signals wholeness.',
+  '8': 'Eight is the luckiest number in Chinese culture. Beijing opened the 2008 Olympics at 8:08:08 pm on 8 August; Hong Kong plate "88" fetched HK$11.4 million in 2025.',
+  '4': 'Tetraphobia is widespread in East Asia. Many buildings in Hong Kong, mainland China and Taiwan skip floors 4, 14, 24 and 40–49; hospitals avoid room 4.',
+  '6': 'In Chinese internet slang "666" means "awesome / skilful", the opposite of its Western "number of the beast" association.',
+  '9': 'Nine was reserved for the emperor — the Forbidden City is said to have 9,999 rooms (a legend). Nine roses or 99 roses symbolise everlasting love.',
+  '7': 'The seventh lunar month is Ghost Month; weddings and moves are often avoided. Qixi — the 7th day of the 7th month — is Chinese Valentine\'s Day.',
+  '13': 'In Shanghainese, 十三点 describes a silly person. Western superstition about 13 also appears in international hotels in China.',
+  '14': 'One of the most avoided two-digit numbers: 要死 (Mandarin) / 实死 (Cantonese), "will certainly die".',
+  '18': 'Hong Kong plate "18" sold for HK$16.5 million in 2008 — 要发, "going to prosper".',
+  '28': 'Hong Kong plate "28" sold for HK$18.1 million in 2016. In Cantonese, 二八 sounds like 易发 — "easy prosperity".',
+  '38': 'March 8 is International Women\'s Day (三八妇女节). But 三八 is also slang for a gossipy or silly woman (三八婆 in Cantonese), so brands use it carefully.',
+  '88': '88 looks like 囍 (double happiness) and sounds like 发发. Online, "88" is shorthand for "bye-bye".',
+  '99': 'Ninety-nine (久久) means "for a very long time" — the Double Ninth Festival (重阳节) honours elders.',
+  '00': 'In Chinese, "00后" (post-00s) refers to people born 2000–2009 — China\'s Gen Z. On phones, 00 is the international dialling prefix used in China.',
+  '108': 'Sacred in Buddhism and Taoism: 108 beads on a mala, 108 heroes of the Water Margin.',
+  '168': '一路发 (yī lù fā) — "prosperity all the way". Extremely popular for business phone numbers and shop prices (e.g. ¥168).',
+  '250': '二百五 means "idiot" or "half-wit". Never price a gift at 250.',
+  '338': 'In Cantonese, 3-3-8 can be read 生生发 (saang saang faat), "grow, grow, prosper". In Mandarin the embedded 三八 can read as slang, so it is dialect-dependent.',
+  '360': 'A full circle — completeness. Also a popular brand-style number in China.',
+  '365': 'Every day of the year — used for "always there" promises.',
+  '518': '我要发 — "I will prosper". A staple of shopfront numbers and car plates.',
+  '520': '我爱你 — "I love you". 20 May is China\'s internet Valentine\'s Day; marriage registries see booking surges.',
+  '521': '我愿意 — "I\'m willing / I do". 21 May is the "answer" day to 520.',
+  '666': '六六六 — "slick, flawless". Popular gamer and livestream slang.',
+  '748': '去死吧 — "go die". Aggressive internet slang; avoid.',
+  '888': 'Triple prosperity. Cathay Pacific uses CX888 for its Hong Kong–Vancouver route.',
+  '999': 'Enduring. Also associated with the emperor and with long life.',
+  '1314': '一生一世 — "one lifetime, forever". Often paired: 5201314.',
+  '1688': '一路发发 — "prosperity all the way, doubled". Popular B2B and trading brand number.',
+  '2008': 'The year Beijing hosted the Summer Olympics — opening at 8:08 pm on 08/08/08.',
+  '2026': '2026 is the Year of the Fire Horse (丙午). Its digits include 20 and 26 — neutral-to-positive, no 4.',
+  '3344': '生生世世 — "life after life". A rare case where 4 turns positive in a romantic phrase.',
+  '5201314': '我爱你一生一世 — "I love you for a lifetime". The ultimate love code; couples marry on 2013-14 date variants.',
+  '8888': 'Quadruple prosperity — an 8888 phone ending sells at a premium across Greater China.',
+  '9999': 'Four nines — "forever and ever". Popular for jewellery and anniversary numbers.',
+  '1111': 'Singles\' Day (11 November) — now the world\'s biggest online shopping festival.',
+  '618': 'June 18 is a major mid-year online shopping festival in China. 六一八 also reads 路要发, "road to prosperity".',
+  '00338': 'Our namesake. 00338 is the Hong Kong exchange code of a listed petrochemical company (we are not affiliated). As a string: 00 is China\'s international dialling prefix, 0033 would dial France from China, and 338 reads 生生发 in Cantonese.'
+};
+
+module.exports.NOTABLE = ['00', '000', '100', '101', '108', '111', '123', '125', '168', '188', '198', '222', '250', '258', '268', '288', '318', '333', '338', '360', '365', '388', '444', '518', '520', '521', '555', '588', '598', '618', '666', '668', '688', '748', '777', '788', '818', '868', '888', '918', '928', '988', '999', '1111', '1234', '1314', '1688', '2008', '2026', '2288', '3344', '5201314', '6666', '6688', '8888', '9999', '00338', '88888'];
+
+// Sourced data points (see /learn pages for citations)
+module.exports.PLATES = [
+  { plate: 'W', price: 'HK$26,000,000', year: '2021', note: 'Record for a Hong Kong plate' },
+  { plate: 'H', price: 'HK$20,000,000', year: '2026', note: 'Lunar New Year auction' },
+  { plate: '28', price: 'HK$18,100,000', year: '2016', note: '易发 — "easy prosperity"' },
+  { plate: '18', price: 'HK$16,500,000', year: '2008', note: '要发 — "going to prosper"' },
+  { plate: 'S', price: 'HK$14,200,000', year: '2025', note: 'February 2025 auction' },
+  { plate: '88', price: 'HK$11,400,000', year: '2025', note: 'Double prosperity' },
+  { plate: '30', price: 'HK$4,550,000', year: '2026', note: 'Lunar New Year auction' },
+  { plate: '2288', price: 'HK$470,000', year: '2026', note: '易易发发' }
+];
+module.exports.PHONES = [
+  { number: '+86 28 8888 8888', price: 'CN¥2.33M (~US$280k)', year: '2003', where: 'Sichuan Airlines, Chengdu' },
+  { number: 'Beijing mobile ending 88888', price: 'CN¥2.25M (~US$324k)', year: '2020', where: 'Court auction, 5,000+ bids' },
+  { number: '666-6666', price: '~US$2.75M', year: '2006', where: 'Qatar — Guinness World Record' }
+];
+module.exports.DOMAINS = [
+  { domain: '55.com', price: 'US$2.3M', note: 'Cited by Media Options' },
+  { domain: '114.com', price: 'US$2.1M', note: 'Cited by Media Options' },
+  { domain: '37.com', price: 'US$1.96M', year: '2014', note: 'NamePros data' },
+  { domain: '345.com', price: 'US$800k', year: '2015', note: 'NamePros data' },
+  { domain: '88888.com', price: 'US$245k', note: 'Cited by Media Options' },
+  { domain: '458.com', price: 'US$140k', year: '2015', note: 'NamePros data' },
+  { domain: '144.com', price: 'US$110k', year: '2015', note: 'NamePros data' }
+];
