@@ -1,0 +1,17 @@
+---
+layout: default
+title: "Chinese Number Meanings Directory (0–99 & Famous Combos)"
+description: "Browse the meaning of every number from 0 to 99 and famous Chinese number combinations like 168, 520, 1314, 888 and 5201314."
+canon: "numbers/index.html"
+base: "../"
+permalink: /numbers/index.html
+g1: "0:50 1:62 2:68 3:62 4:8 5:44 6:74 7:50 8:90 9:74"
+g2: "10:53 11:68 12:66 13:46 14:24 15:49 16:71 17:53 18:75 19:71 20:55 21:64 22:74 23:64 24:25 25:51 26:72 27:55 28:76 29:72 30:53 31:62 32:66 33:59 34:22 35:49 36:71 37:53 38:47 39:71 40:40 41:48 42:53 43:48 44:14 45:35 46:57 47:40 48:69 49:57 50:48 51:57 52:61 53:57 54:17 55:50 56:65 57:48 58:46 59:65 60:57 61:65 62:70 63:65 64:25 65:53 66:69 67:57 68:76 69:74 70:50 71:59 72:63 73:59 74:24 75:46 76:67 77:56 78:80 79:67 80:60 81:69 82:73 83:69 84:29 85:56 86:77 87:60 88:83 89:77 90:57 91:65 92:70 93:65 94:25 95:53 96:74 97:57 98:87 99:69"
+g3: "00:56 000:56 100:52 101:62 108:75 111:68 123:67 125:55 168:82 188:90 198:82 222:74 250:29 258:48 268:78 288:90 318:76 333:64 338:67 360:59 365:56 388:62 444:14 518:80 520:65 521:67 555:50 588:61 598:78 618:78 666:76 668:79 688:90 748:35 777:56 788:75 818:84 868:85 888:90 918:75 928:79 988:80 999:76 1111:71 1234:41 1314:63 1688:82 2008:71 2026:67 2288:91 3344:63 5201314:72 6666:86 6688:92 8888:99 9999:86 00338:65 88888:99"
+---
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebSite","name":"00338 Number Lab","url":"https://00338.com/","potentialAction":{"@type":"SearchAction","target":"https://00338.com/tools/number-decoder.html?n={n}","query-input":"required name=n"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Numbers","item":"https://00338.com/numbers/index.html"}]}]</script>
+<div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <span>Numbers</span></nav><h1>Chinese number directory</h1><p class="muted">Every number from 0 to 99 plus the famous combinations. Green borders are lucky, red are unlucky. Can't find yours? <a href="../tools/number-decoder.html">Decode any number</a>.</p>
+<h2>Single digits</h2><div class="related">{% assign L = page.g1 | split: " " %}{% include nlist.html %}</div>
+<h2 style="margin-top:1.2em">10 – 99</h2><div class="related">{% assign L = page.g2 | split: " " %}{% include nlist.html %}</div>
+<div class="ad-slot " data-slot="inArticle" aria-label="Advertisement"><span class="ad-label">Advertisement</span><span>Ad space · <a href="../advertise.html">advertise here</a></span></div>
+<h2>Famous combinations</h2><div class="related">{% assign L = page.g3 | split: " " %}{% include nlist.html %}</div></div>{% include lead.html %}
