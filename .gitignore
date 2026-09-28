@@ -1,3 +1,9 @@
 dist/
 node_modules/
 .DS_Store
+
+# generated Jekyll output (published on the gh-pages branch)
+jekyll/
+# CI workflow kept local: integration lacks the workflow permission
+.github/
+jekyll-compact/
