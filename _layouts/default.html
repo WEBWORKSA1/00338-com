@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-base="{{ page.base }}">
+<head>
+<meta charset="utf-8">
+{% if page.is404 %}<script>document.write('<base href="' + (location.pathname.indexOf('/00338-com/') === 0 ? '/00338-com/' : '/') + '">')</script>{% endif %}
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ page.title }}{% unless page.home %} | 00338{% endunless %}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="https://00338.com/{{ page.canon }}">
+<meta name="robots" content="{% if page.noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta name="theme-color" content="#C8102E">
+<meta property="og:type" content="{{ page.ogtype | default: 'website' }}">
+<meta property="og:site_name" content="00338 Number Lab">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="https://00338.com/{{ page.canon }}">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="{{ page.base }}src/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Noto+Serif+SC:wght@600;700&display=swap">
+<link rel="stylesheet" href="{{ page.base }}src/assets/css/style.css?v=71938928">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note"><a href="https://web.works/contact" target="_blank" rel="noopener">Contact</a>, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership → <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="{{ page.base }}index.html" aria-label="00338 Number Lab home"><span class="seal">吉</span><span><span class="name"><b>00</b>33<b>8</b></span><small>Number Lab</small></span></a>
+<button class="icon-btn burger" type="button" aria-label="Menu" aria-expanded="false">☰</button>
+<ul class="menu"><li><a href="{{ page.base }}tools/number-decoder.html">Decoder</a></li><li><button class="dd" type="button" aria-expanded="false" aria-controls="sub1">Tools ▾</button><ul class="sub" id="sub1"><li><a href="{{ page.base }}tools/number-decoder.html">Number Decoder</a></li><li><a href="{{ page.base }}tools/lucky-phone-number-checker.html">Lucky Phone Number Checker</a></li><li><a href="{{ page.base }}tools/lucky-license-plate-checker.html">Licence Plate Checker</a></li><li><a href="{{ page.base }}tools/numeric-domain-checker.html">Numeric Domain Checker</a></li><li><a href="{{ page.base }}tools/lucky-number-generator.html">Lucky Number Generator</a></li><li><a href="{{ page.base }}tools/lucky-date-picker.html">Lucky Date Picker</a></li><li><a href="{{ page.base }}tools/lunar-calendar-converter.html">Lunar Calendar Converter</a></li><li><a href="{{ page.base }}tools/chinese-zodiac-calculator.html">Chinese Zodiac Calculator</a></li><li><a href="{{ page.base }}tools/numerology-calculator.html">Numerology Calculator</a></li><li><a href="{{ page.base }}tools/hk-stock-code-decoder.html">HK Stock Code Decoder</a></li><li><a href="{{ page.base }}tools/index.html">All tools →</a></li></ul></li><li><button class="dd" type="button" aria-expanded="false" aria-controls="sub2">Numbers ▾</button><ul class="sub" id="sub2"><li><a href="{{ page.base }}numbers/index.html">0–9 &amp; famous combos</a></li><li><a href="{{ page.base }}numbers/8.html">8 — prosperity</a></li><li><a href="{{ page.base }}numbers/4.html">4 — avoided</a></li><li><a href="{{ page.base }}numbers/168.html">168</a></li><li><a href="{{ page.base }}numbers/520.html">520</a></li><li><a href="{{ page.base }}numbers/00338.html">00338</a></li></ul></li><li><a href="{{ page.base }}zodiac/index.html">Zodiac</a></li><li><button class="dd" type="button" aria-expanded="false" aria-controls="sub4">Learn ▾</button><ul class="sub" id="sub4"><li><a href="{{ page.base }}learn/chinese-lucky-numbers-guide.html">Chinese Lucky Numbers Guide</a></li><li><a href="{{ page.base }}learn/meaning-of-00338.html">The meaning of 00338</a></li><li><a href="{{ page.base }}learn/cantonese-vs-mandarin-number-meanings.html">Cantonese vs Mandarin numbers</a></li><li><a href="{{ page.base }}learn/hong-kong-license-plate-auctions.html">HK plate auction records</a></li><li><a href="{{ page.base }}learn/numeric-domains-chinese-buyers.html">Numeric domains &amp; Chinese buyers</a></li><li><a href="{{ page.base }}learn/lucky-phone-numbers-china.html">Lucky phone numbers (靓号)</a></li><li><a href="{{ page.base }}learn/chinese-number-slang-520-1314.html">Number slang: 520, 1314, 666</a></li><li><a href="{{ page.base }}learn/index.html">All guides →</a></li></ul></li><li><a href="{{ page.base }}videos.html">Videos</a></li><li><button class="dd" type="button" aria-expanded="false" aria-controls="sub6">Community ▾</button><ul class="sub" id="sub6"><li><a href="{{ page.base }}contests.html">Contests &amp; prizes</a></li><li><a href="{{ page.base }}support.html">Support us</a></li><li><a href="{{ page.base }}careers.html">Careers</a></li><li><a href="{{ page.base }}advertise.html">Advertise &amp; sponsor</a></li></ul></li>
+<li><button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" title="Light / dark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></li>
+<li><a class="cta" href="{{ page.base }}get-a-lucky-number.html">Get a lucky number</a></li></ul>
+</div></header>
+<main id="main">
+{{ content }}
+</main>
+<section class="section-alt" style="padding:36px 0"><div class="wrap" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+<div><b>Interested in this website, the 00338.com domain, sponsorship, advertising or a partnership?</b><div class="small muted">Serious enquiries are answered quickly.</div></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary" href="https://web.works/contact" target="_blank" rel="noopener">Contact via web.works</a><a class="btn btn-ghost" href="{{ page.base }}advertise.html">Media kit & rates</a></div>
+</div></section>
+<footer class="site-footer"><div class="wrap">
+<div class="foot-grid">
+<div><a class="brand" href="{{ page.base }}index.html" style="color:#fff"><span class="seal">吉</span><span><span class="name" style="color:#fff"><b>00</b>33<b>8</b></span><small style="color:#A99C8F">Number Lab</small></span></a>
+<p class="small" style="margin-top:12px">Decode the culture, sound and money behind Chinese numbers. Free tools, honest meanings, real data.</p>
+<form class="newsletter" data-form="newsletter" data-subject="Newsletter signup" data-success="You're in! Your first Lucky Number of the Day arrives soon." novalidate>
+<label class="hp">Leave empty<input name="_honey" tabindex="-1" autocomplete="off"></label>
+<input type="email" name="email" placeholder="Email for daily lucky numbers" aria-label="Email address" required>
+<button class="btn btn-gold" type="submit">Join</button><div class="form-status" role="status"></div></form></div>
+<div><h4>Tools</h4><ul><li><a href="{{ page.base }}tools/number-decoder.html">Number Decoder</a></li><li><a href="{{ page.base }}tools/lucky-phone-number-checker.html">Phone Checker</a></li><li><a href="{{ page.base }}tools/lucky-license-plate-checker.html">Plate Checker</a></li><li><a href="{{ page.base }}tools/numeric-domain-checker.html">Domain Checker</a></li><li><a href="{{ page.base }}tools/lunar-calendar-converter.html">Lunar Calendar</a></li><li><a href="{{ page.base }}tools/chinese-zodiac-calculator.html">Zodiac</a></li></ul></div>
+<div><h4>Learn</h4><ul><li><a href="{{ page.base }}learn/chinese-lucky-numbers-guide.html">Lucky numbers guide</a></li><li><a href="{{ page.base }}learn/meaning-of-00338.html">Meaning of 00338</a></li><li><a href="{{ page.base }}numbers/index.html">Number directory</a></li><li><a href="{{ page.base }}zodiac/index.html">12 zodiac signs</a></li><li><a href="{{ page.base }}videos.html">Videos</a></li></ul></div>
+<div><h4>Work with us</h4><ul><li><a href="{{ page.base }}get-a-lucky-number.html">Buy / sell lucky numbers</a></li><li><a href="{{ page.base }}advertise.html">Advertise & sponsor</a></li><li><a href="{{ page.base }}support.html">Support / donate</a></li><li><a href="{{ page.base }}contests.html">Contests & prizes</a></li><li><a href="{{ page.base }}careers.html">Careers</a></li><li><a href="{{ page.base }}contact.html">Contact</a></li></ul></div>
+<div><h4>Legal</h4><ul><li><a href="{{ page.base }}about.html">About & methodology</a></li><li><a href="{{ page.base }}privacy.html">Privacy & cookies</a></li><li><a href="{{ page.base }}terms.html">Terms of use</a></li><li><a href="{{ page.base }}disclaimer.html">Trademark & copyright</a></li><li><a href="#" data-open-consent>Cookie settings</a></li><li><a href="{{ page.base }}sitemap.html">Sitemap</a></li></ul></div>
+</div>
+<div class="legal">© <span data-year>2026</span> 00338.com — 00338 Number Lab. Content is for cultural and entertainment reference only; not financial, legal or investment advice. "00338" is used here as a number, not a trademark; we are not affiliated with any company, exchange or brand whose identifiers contain the same digits. Third-party names and marks belong to their owners. <a href="{{ page.base }}disclaimer.html">Full disclosure</a>.</div>
+</div></footer>
+<div class="consent" role="dialog" aria-label="Cookie consent"><b>Cookies & ads</b><p class="small" style="margin:.4em 0 0">We use cookies for analytics and Google AdSense ads that keep this site free. Choose "Accept all" for personalised ads, or "Essential only" for non-personalised ads. <a href="{{ page.base }}privacy.html">Privacy policy</a>.</p><div class="btns"><button class="btn btn-primary" data-consent="all" type="button">Accept all</button><button class="btn btn-ghost" data-consent="essential" type="button">Essential only</button></div></div>
+<a class="btn btn-primary sticky-cta" href="{{ page.base }}get-a-lucky-number.html">🧧 Get a lucky number</a>
+<script src="{{ page.base }}src/assets/js/config.js?v=71938928"></script>
+{% if page.tools %}<script src="{{ page.base }}src/assets/js/site-data.js?v=71938928"></script><script src="{{ page.base }}src/assets/js/engine.js?v=71938928"></script><script src="{{ page.base }}src/assets/js/tools.js?v=71938928" defer></script>{% endif %}
+<script src="{{ page.base }}src/assets/js/app.js?v=71938928" defer></script>
+</body></html>

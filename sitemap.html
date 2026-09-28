@@ -1,0 +1,9 @@
+---
+layout: default
+title: "Sitemap"
+description: "All pages on 00338.com."
+canon: "sitemap.html"
+base: "./"
+permalink: /sitemap.html
+---
+<div class="wrap"><h1>Sitemap</h1>{% assign groups = "tools,numbers,zodiac,learn" | split: "," %}<h2>Main</h2><div class="related">{% for p in site.pages %}{% if p.canon and p.noindex != true %}{% unless p.canon contains "/" %}<a href="{{ p.canon | default: 'index.html' }}" style="font-family:var(--sans);font-weight:500">{{ p.title | truncate: 48 }}</a>{% endunless %}{% endif %}{% endfor %}</div>{% for g in groups %}<h2 style="text-transform:capitalize">{{ g }}</h2><div class="related">{% for p in site.pages %}{% assign pre = g | append: "/" %}{% if p.canon and p.canon contains pre %}<a href="{{ p.canon }}" style="font-family:var(--sans);font-weight:500">{{ p.canon | remove: pre | remove: ".html" }}</a>{% endif %}{% endfor %}</div>{% endfor %}</div>

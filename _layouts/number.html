@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Numbers","item":"https://00338.com/numbers/index.html"},{"@type":"ListItem","position":2,"name":{{ page.n | jsonify }},"item":"https://00338.com/numbers/{{ page.n }}.html"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{% for f in page.faq %}{"@type":"Question","name":{{ f[0] | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ f[1] | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}]</script>
+<div class="wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../numbers/index.html">Numbers</a> / <span>{{ page.n }}</span></nav><div class="layout"><article>
+<div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap"><div class="num-hero">{{ page.n }}</div><div><h1 style="margin:0;font-size:clamp(1.6rem,3.5vw,2.4rem)">Meaning of {{ page.n }} in Chinese culture</h1><div class="mono muted" style="font-size:1.1rem">{{ page.han }} · {{ page.pinyin }}</div></div></div>
+<div class="answer-box" style="margin-top:18px"><b>Quick answer:</b> {{ page.summary | escape }} {{ page.note | escape }}</div>
+<div class="grid g3" style="margin:12px 0 20px">{% for s in page.scores %}<div class="card" style="text-align:center"><div class="small muted">{{ s[0] }}</div><div class="mono" style="font:800 2rem var(--mono)">{{ s[1] }}</div><div class="tier t-{{ s[2] }}" style="font-size:.95rem">{{ s[3] }}</div></div>{% endfor %}</div>
+<div class="prose">
+<h2>Digit by digit</h2><table><thead><tr><th>Digit</th><th>Mandarin</th><th>Cantonese</th><th>Sounds like / meaning</th></tr></thead><tbody>{% for d in page.uniq %}{% assign x = site.data.digits[d] %}<tr><td class="mono"><b>{{ d }}</b></td><td>{{ x.han }} {{ x.py }}</td><td>{{ x.jp }}</td><td>{{ x.sound | escape }}</td></tr>{% endfor %}</tbody></table>
+<h2>Combinations inside {{ page.n }}</h2>{% for c in page.combos %}<div class="combo {{ c[1] }}"><b class="mono">{{ c[0] }}</b> — {{ site.data.combos[c[0]] | escape }}</div>{% else %}<p class="muted">No famous combination — the meaning comes from the individual digits.</p>{% endfor %}
+{% if page.patterns.size > 0 %}<h2>Patterns</h2><ul>{% for p in page.patterns %}<li><b>{{ p[0] }}:</b> {{ p[1] }}</li>{% endfor %}</ul>{% endif %}
+<div class="ad-slot " data-slot="inArticle" aria-label="Advertisement"><span class="ad-label">Advertisement</span><span>Ad space · <a href="../advertise.html">advertise here</a></span></div>
+<h2>How to use {{ page.n }}</h2><ul>{% for u in page.uses %}<li>{{ u }}</li>{% endfor %}</ul>
+</div>
+<h2>Try your own number</h2><div class="decoder" data-tool="decoder" data-context="general">
+<form role="search" aria-label="Decode a number"><div class="decoder-input"><input name="n" inputmode="numeric" autocomplete="off" placeholder="Type any number…" value="{{ page.n }}" aria-label="Number to decode" maxlength="40"><button class="btn btn-primary" type="submit">Decode</button></div></form>
+<div style="margin-top:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><div class="seg" role="group" aria-label="Dialect"><button type="button" data-dialect="both" aria-pressed="true">Blended</button><button type="button" data-dialect="mandarin" aria-pressed="false">Mandarin</button><button type="button" data-dialect="cantonese" aria-pressed="false">Cantonese</button></div><span class="small muted">Free · instant · no sign-up</span></div>
+<div class="result" aria-live="polite"></div>
+</div>
+<div class="callout gold" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;justify-content:space-between"><div><b>Want a number like this for yourself?</b><div class="small">We source lucky phone numbers, plates and numeric domains — or appraise yours. Free quote in 24h.</div></div><a class="btn btn-primary" href="../get-a-lucky-number.html">Get my free quote</a></div>
+<section class="faq" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2>{% for f in page.faq %}<details><summary>{{ f[0] | escape }}</summary><p style="margin:.6em 0 0">{{ f[1] }}</p></details>{% endfor %}</section>
+<h2 style="margin-top:1.4em">Related numbers</h2><div class="related">{% for r in page.related %}<a href="{{ r }}.html">{{ r }}</a>{% endfor %}</div>
+<div class="pager">{% if page.prev %}<a class="btn btn-ghost" href="{{ page.prev }}.html">← {{ page.prev }}</a>{% else %}<span></span>{% endif %}<a class="btn btn-ghost" href="index.html">All numbers</a>{% if page.next %}<a class="btn btn-ghost" href="{{ page.next }}.html">{{ page.next }} →</a>{% else %}<span></span>{% endif %}</div>
+</article>{% include aside.html %}</div></div>
